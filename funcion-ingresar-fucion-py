@@ -1,0 +1,41 @@
+# Este programa sirve para calcular Series de Fourier Discretas
+# Autor: Uriel Alvarez
+# Fecha: 1 de Mayo de 2023
+
+"""
+El proposito de este código es siplemente crear una función que muestre por pantalla
+las formulas que se van a usar de forma amigable es decir en formato matematico
+
+"""
+
+#Importar las librerias
+from sympy import symbols, sin, Eq, cos, sqrt, pprint, sympify
+
+# Definir la función
+def ingresar_función():
+    # Tomar la cadena que representa la ecuación
+    
+    # Declarar los simbolos que se van a usar
+    t, A_0, A_1, B_1, w_0 = symbols('t A₀ A₁ B₁ w₀')
+    
+    # Convertir la cadena de ecuación en una expresión SymPy
+    expresion = sympify('1.7+0.5*cos(4.18*t)-0.866*sen(4.18*t)')
+    
+    # Extraer los coeficientes de la expresión
+    A_0_valor = expresion.coeff(A_0)
+    A_1_valor = expresion.coeff(A_1)
+    B_1_valor = expresion.coeff(B_1)
+    w_0_valor = expresion.coeff(w_0)
+    t_valor = expresion.coeff(t)
+
+    # Imprimir los valores de los coeficientes
+    print("Valores de los coeficientes:")
+    print("A₀ =", A_0_valor)
+    print("A₁ =", A_1_valor)
+    print("B₁ =", B_1_valor)
+    print("w₀ =", w_0_valor)
+    print("t =", t)
+
+    pprint(expresion)
+#LLamada a la función
+ingresar_función()
