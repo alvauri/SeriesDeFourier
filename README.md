@@ -1,7 +1,7 @@
 # SeriesDeFourier
 Repositorio de práctica con NumPy, SymPy, Matplotlib y SciPy. Explora ejemplos de código para mejorar tus habilidades en el análisis y procesamiento de datos en Python.
 
-# Descripción apliada
+# Descripción ampliada
 Repositorio de práctica con Python y algunas de las bibliotecas más populares en el ámbito científico y de análisis de datos. En este repositorio, exploraré y compartiré ejemplos de código utilizando librerías como NumPy, SymPy, Matplotlib y SciPy.
 
 NumPy: Realizaré ejercicios prácticos para trabajar con matrices y realizar operaciones numéricas eficientes.
